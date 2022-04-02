@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1002 陳秀儒 版型二</title>
+  <link rel="shortcut icon" href="../images/webicon.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/all.css">
+  <style>
+    #wrapper {
+      width: 930px;
+      margin: 0 auto;
+    }
+
+    #header {
+      width: 930px;
+      /* 930=(180+10)+550+(180+10) */
+      height: 120px;
+      background-color: #ce7aff;
+      margin-bottom: 10px;
+    }
+
+    #header a {
+      color: #fff;
+      background-color: #003172;
+      text-decoration: none;
+    }
+
+    #header a:hover {
+      background-color: #225faf;
+    }
+
+    #container {
+      width: 930px;
+      position: relative;
+      /* relative使menu main ad三區塊的absolute位置以container為基準 */
+    }
+
+    #menu {
+      width: 180px;
+      background-color: #2de6ff;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    #main {
+      width: 550px;
+      background-color: #ffd900;
+      /* position: absolute;
+      left: 190px; 190=180(menu)+10(間距)
+      top: 0;	 */
+      margin-left: 190px;
+      /*用margin取代absolute讓main下凡，footer就會被往下擠 */
+    }
+
+    #ad {
+      width: 180px;
+      background-color: #93ff2d;
+      position: absolute;
+      left: 750px;
+      /* 180(menu)+10+550(main)+10 */
+      top: 0;
+    }
+
+    #footer {
+      width: 930px;
+      height: 40px;
+      background-color: #aaa;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- /* wrapper包住所有人設定margin 0 auto使其他div可自動顯示在畫面中間 */ -->
+  <div id="wrapper">
+    <div id="header">
+      <p>header</p>
+      <p>10/02 – 3311031011 陳秀儒 版型二</p>
+      <p>
+        <a href="index.html">版型一連結</a>
+      </p>
+    </div>
+
+    <div id="container">
+      <div id="menu">
+        menu<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </div>
+
+      <div id="main">
+        main<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </div>
+
+      <div id="ad">
+        ad<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </div>
+    </div>
+
+    <div id="footer">footer</div>
+  </div>
+
+  <div id="iconDiv">
+    <a href="#">Top</a>
+    <a href="../index.html#hwnav">其他作業連結</a>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+*{
+  box-sizing: border-box;
+}
+p{
+  margin: 0;
+}
+body{
+  font-family: sans-serif, 'Microsoft Yahei UI', 'Microsoft JhengHei';
+  margin: 0;
+  padding: 0;
+  background: url(../images/ocean.gif) no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+}
+.hsiu{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fff;
+
+  /* hsiu 區塊字體 */
+  font-family: 'Arial Black', sans-serif;
+  text-align: center;
+  font-weight: bolder;
+  color: #000;
+
+  /* 文字元素與下層混和效果 */
+  mix-blend-mode: screen;
+}
+.hsiu h1{
+  width: 100%;
+  height: 50vh;
+  font-size: 14vw;
+}
+.hsiu p{
+  width: 100%;
+  font-size: 2vw;
+}
+.wrapper{
+  background: url(../images/ocean.jpg) no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 150px;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 60px;
+  background-color: rgba(0, 49, 114, 0.6);
+  margin-bottom: 150px;
+}
+nav h2{
+  font-size: 1.6rem;
+  margin: 0;
+  color: #fff;
+}
+main{
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.65);
+  border: 10px solid #fff;
+  width: 50%;
+  margin: 0 auto;
+}
+.box{
+  text-align: center;
+  margin: 50px auto;
+  width: 100%;
+}
+.menu{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+li{
+  margin: 10px;
+}
+li a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 60px;
+  background-color: #003172;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+li .noteLink{
+  background-color: #ff8800;
+}
+li a:hover, li .noteLink:hover{
+  transition: all 0.2s;
+  background-color: #3178D6;
+  color: #fff;
+  font-size: 20px;
+}
+li a::before{
+  content: '[';
+  opacity: 0;
+}
+li a::after{
+  content: ']';
+  opacity: 0;
+}
+li:hover a::before{
+  transition: all .6s;
+  content: '[';
+  opacity: 1;
+  margin-right: 8px;
+}
+li:hover a::after{
+  transition: all .6s;
+  content: ']';
+  opacity: 1;
+  margin-left: 8px;
+}
+footer{
+  background-color: #003172;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+footer p{
+  padding: 3px;
+}
+
+@media (max-width: 600px) {
+  .box{
+    width: 100%;
+  }
+  main{
+    width: 80%;
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>物件</title>
+  <script>
+    // 每一組 屬性名: 屬性值 以逗號隔開
+    // let 物件名稱 = {
+    //   "屬性名1": 屬性值1,
+    //   "屬性名2": 屬性值2,
+    //   "屬性名3": 屬性值3,
+    //   "屬性名4": 屬性值4,
+    //   "屬性名N": 屬性值N  (最後一組 屬性名N: 屬性值N 最後不要有逗號)
+    // };
+
+    // 物件{ }: 可放字串、數字、布林值、物件、陣列...等
+    let obj1 = {
+      "name": "Eren",
+      "age": 18,
+      "gender": "male",
+      "phoneNum": "0912345678",
+    }
+    console.log(obj1); // 輸出 整個物件
+    console.log(obj1["name"]); // 物件取值(方式一) 輸出 Eren
+    console.log(obj1.name); // 物件取值(方式二) 輸出 Eren
+    console.log(obj1.age); // 輸出 18
+
+    // 屬性名可以不用 " " 包起來
+    let obj2 = {
+      name: "Mikasa",
+      age: 17,
+      gender: "female",
+      phoneNum: "0912654321",
+    }
+    console.log(obj2); // 輸出 整個物件
+    console.log(obj2["age"]); // 輸出 17
+    console.log(obj2.phoneNum); // 輸出 0912654321
+  </script>
+</head>
+
+<body>
+  <h1>物件</h1>
+  <h3>F12 → Console 查看輸出結果</h3>
+</body>
+
+</html>

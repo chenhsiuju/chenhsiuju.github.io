@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1023 陳秀儒</title>
+  <link rel="shortcut icon" href="../images/webicon.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/all.css">
+  <style>
+    body {
+      background: #edf;
+      font-family: sans-serif;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    main div {
+      margin-bottom: 10px;
+    }
+
+    section {
+      text-align: center;
+      width: 350px;
+      background: #fff;
+      margin: 20px;
+    }
+
+    h2 {
+      color: #60f;
+    }
+
+    #calcBox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .inputBox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 120px;
+    }
+
+    #text1,
+    #text2,
+    #text3,
+    #text4 {
+      width: 80px;
+      height: 50px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .numBox {
+      padding: 5px;
+      text-align: center;
+      width: 130px;
+      height: 130px;
+      background: #dcf;
+      margin: 30px auto;
+    }
+
+    #result1,
+    #result2 {
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <section>
+      <h2>四則運算</h2>
+      <div id="calcBox">
+        <div class="inputBox">
+          <p>第一個數字</p>
+          <input type="text" id="text1" placeholder="輸入數字" />
+        </div>
+        <div class="inputBox">
+          <p>第二個數字</p>
+          <input type="text" id="text2" placeholder="輸入數字" />
+        </div>
+      </div>
+
+      <div>
+        <input type="button" id="btn1" value="加法" />
+        <input type="button" id="btn2" value="減法" />
+        <input type="button" id="btn3" value="乘法" />
+        <input type="button" id="btn4" value="除法" />
+        <input type="button" id="btn5" value="取餘" />
+      </div>
+
+      <div class="numBox">
+        <h4>計算結果</h4>
+        <p id="result1">...</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>BMI 計算</h2>
+      <div id="calcBox">
+        <div class="inputBox">
+          <p>請輸入身高</p>
+          <input type="text" id="text3" placeholder="幾公分" />
+        </div>
+        <div class="inputBox">
+          <p>請輸入體重</p>
+          <input type="text" id="text4" placeholder="幾公斤" />
+        </div>
+      </div>
+
+      <div>
+        <input type="button" id="bmiBtn" value="計算" />
+      </div>
+
+      <div class="numBox">
+        <h4>您的 BMI 是</h4>
+        <p id="result2">...</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="iconDiv">
+    <a href="#">Top</a>
+    <a href="../index.html#hwnav">其他作業連結</a>
+  </div>
+
+  <script>
+    //獲取 DOM 元素
+    let oText1 = document.getElementById("text1");
+    let oText2 = document.getElementById("text2");
+    let oText3 = document.getElementById("text3");
+    let oText4 = document.getElementById("text4");
+    let oBtn1 = document.getElementById("btn1");
+    let oBtn2 = document.getElementById("btn2");
+    let oBtn3 = document.getElementById("btn3");
+    let oBtn4 = document.getElementById("btn4");
+    let oBtn5 = document.getElementById("btn5");
+    let oResult1 = document.getElementById("result1");
+    let oBmiBtn = document.getElementById("bmiBtn");
+    let oResult2 = document.getElementById("result2");
+
+    //加法 --- 數字與字串操作
+    oBtn1.onclick = function () {
+      //將字串轉為數字
+      let num1 = Number(oText1.value);
+      let num2 = Number(oText2.value);
+      oResult1.innerHTML = num1 + num2;
+    }
+
+    //減法 --- 只能進行數字操作
+    oBtn2.onclick = function () {
+      oResult1.innerHTML = oText1.value - oText2.value;
+    }
+
+    //乘法 --- 只能進行數字操作
+    oBtn3.onclick = function () {
+      oResult1.innerHTML = oText1.value * oText2.value;
+    }
+
+    //除法 --- 只能進行數字操作
+    oBtn4.onclick = function () {
+      let num = oText1.value / oText2.value;
+      num = num.toFixed(2);
+      oResult1.innerHTML = num;
+    }
+
+    //取餘 --- 只能進行數字操作
+    oBtn5.onclick = function () {
+      oResult1.innerHTML = oText1.value % oText2.value;
+    }
+
+    //計算BMI
+    oBmiBtn.onclick = function () {
+      let bmi = oText4.value / (oText3.value / 100) ** 2;
+      bmi = bmi.toFixed(2);
+      oResult2.innerHTML = bmi;
+    }
+  </script>
+
+</body>
+
+</html>

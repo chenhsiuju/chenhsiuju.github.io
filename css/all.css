@@ -1,0 +1,32 @@
+*{
+  cursor: url(../images/cur1.cur), auto;
+}
+a:hover, button:hover{
+  cursor: url(../images/cur2.cur), auto;
+}
+#iconDiv{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  align-items: center;
+}
+#iconDiv a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff8800;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 3px solid #ffffff;
+  border-radius: 50px;
+  box-shadow: 3px 3px 3px #666;
+  opacity: 0.7;
+}
+#iconDiv a:hover{
+  background: #3178D6;
+  opacity: 1;
+  transition: all 0.5s;
+}

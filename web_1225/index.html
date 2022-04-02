@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/webicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/all.css">
+    <title>1225 Canvas繪圖</title>
+</head>
+
+<body>
+    <h1>Canvas繪圖</h1>
+    <canvas id="myCanvas" width="300" height="400" style="border:1px solid #000000; background-color: skyblue;">
+        您的瀏覽器不支援Canvas，請改使用Chorme或是Edge瀏覽器。
+    </canvas>
+
+
+    <div id="iconDiv">
+        <a href="#">Top</a>
+        <a href="../index.html#hwnav">其他作業連結</a>
+    </div>
+
+    <script>
+        let c = document.getElementById("myCanvas") // 獲取 canvas #myCanvas元素(物件) [不可繪圖的畫布]
+        let ctx = c.getContext("2d");           // [可繪圖的畫布]
+
+        ctx.clearRect(0, 0, c.width, c.length); // 清除畫布
+        ctx.beginPath();  // 清除之前繪製的路徑
+
+        ctx.font = "20px Arial";
+        ctx.fillStyle = "darkblue";
+        ctx.fillText("資管一A 3311031011", 10, 50);
+        ctx.stroke();
+
+        // snowman head
+        ctx.strokeStyle = "a6f";    // 邊框
+        ctx.fillStyle = "white";  // 圖案填色
+        ctx.arc(100, 120, 50, 0, 2 * Math.PI, 0); // 座標, 半徑, 起頭的角度, 終點角度, 順(0)/ 逆(1)時針
+        ctx.fill();
+        ctx.stroke();
+        ctx.beginPath();  // 清除之前繪製的路徑
+
+        // snowman body
+        ctx.strokeStyle = "a6f";    // 邊框
+        ctx.fillStyle = "white";  // 圖案填色
+        ctx.arc(100, 230, 60, 0, 2 * Math.PI, 0); // 座標, 半徑, 起頭的角度, 終點角度, 順(0)/ 逆(1)時針
+        ctx.fill();
+        ctx.stroke();
+        ctx.beginPath();  // 清除之前繪製的路徑
+
+        // 鈕扣1
+        ctx.fillStyle = "white";  // 圖案填色
+        ctx.arc(100, 200, 5, 0, 2 * Math.PI, 0); // 座標, 半徑, 起頭的角度, 終點角度, 順(0)/ 逆(1)時針
+        ctx.fill();
+        ctx.stroke();
+        ctx.beginPath();  // 清除之前繪製的路徑
+        // 鈕扣2
+        ctx.fillStyle = "white";  // 圖案填色
+        ctx.arc(100, 230, 5, 0, 2 * Math.PI, 0); // 座標, 半徑, 起頭的角度, 終點角度, 順(0)/ 逆(1)時針
+        ctx.fill();
+        ctx.stroke();
+        ctx.beginPath();  // 清除之前繪製的路徑
+        // 鈕扣3
+        ctx.fillStyle = "white";  // 圖案填色
+        ctx.arc(100, 260, 5, 0, 2 * Math.PI, 0); // 座標, 半徑, 起頭的角度, 終點角度, 順(0)/ 逆(1)時針
+        ctx.fill();
+        ctx.stroke();
+        ctx.beginPath();  // 清除之前繪製的路徑
+
+        // eyes
+        ctx.fillStyle = "#000";  // 圖案填色
+        ctx.arc(80, 120, 5, 0, 2 * Math.PI, 0); // 座標, 半徑, 起頭的角度, 終點角度, 順(0)/ 逆(1)時針
+        ctx.fill();
+        ctx.stroke();
+        ctx.beginPath();  // 清除之前繪製的路徑
+        // eyes
+        ctx.fillStyle = "#000";  // 圖案填色
+        ctx.arc(120, 120, 5, 0, 2 * Math.PI, 0); // 座標, 半徑, 起頭的角度, 終點角度, 順(0)/ 逆(1)時針
+        ctx.fill();
+        ctx.stroke();
+        ctx.beginPath();  // 清除之前繪製的路徑
+
+        // mouth
+        ctx.fillStyle = "red";  // 圖案填色
+        ctx.arc(100, 135, 8, 0, Math.PI, 0); // 座標, 半徑, 起頭的角度, 終點角度, 順(0)/ 逆(1)時針
+        ctx.lineTo(108, 135);
+        ctx.fill();
+        ctx.stroke();
+        ctx.beginPath();  // 清除之前繪製的路徑
+
+
+    </script>
+</body>
+
+</html>
