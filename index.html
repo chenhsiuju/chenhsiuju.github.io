@@ -1,243 +1,749 @@
-<!doctype html>
-<html lang="zh-Hant-TW">
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="BUY+吃貨 | 輕食.排餐.下午茶" />
-	<title>BUY+吃貨</title>
-	<link rel="shortcut icon" href="images/buyeat_logo_mini.svg" type="image/x-icon" />
-	<link rel="Bookmark" href="images/buyeat_logo_mini.svg" type="image/x-icon" />
-	<link rel="stylesheet" href="assets/bootstrap_460/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
-	<link rel="stylesheet" href="assets/lightbox/css/lightbox.min.css" />
-	<link rel="stylesheet" href="css/animate.min.css" />
-	<link rel="stylesheet" href="css/index.css" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>資訊網路題庫</title>
+	<style>
+		* {
+			font-family: sans-serif;
+			line-height: 1.5rem;
+			font-size: 1.2rem;
+		}
+
+		ol {
+			margin-top: 0.2rem;
+			margin-bottom: 0.6rem;
+		}
+
+		h1 {
+			color: #3985ff;
+			margin: 0.2rem 0;
+			font-size: 1.5rem;
+		}
+	</style>
 </head>
+
 <body>
-	<header id="header" class="">
-		<div class="wrap">
-			<a href="javascript:;" class="logo"><img src="images/buyeat_logo_nav.svg" alt="BUY+吃貨.輕食.排餐.下午茶" class="img-fluid" /></a>
-			<a href="#" class="barsBTN"><i class="fas fa-bars"></i></a>
-			<a href="#" class="closeBTN"><i class="fas fa-times"></i></a>
-			<nav class="navlist">
-				<ul class="list-unstyled">
-					<li><a href="javascript:;" click-target="#about" class="text-decoration-none navlink linkBTN1">關於我們</a></li>
-					<li><a href="javascript:;" click-target="#meal " class="text-decoration-none navlink linkBTN2">餐點介紹</a></li>
-					<li><a href="javascript:;" click-target="#advideo" class="text-decoration-none navlink linkBTN3">優惠活動</a></li>
-					<li><a href="javascript:;" click-target="#contact" class="text-decoration-none navlink linkBTN4">聯絡我們</a></li>
-					<li><a href="javascript:;" class="text-decoration-none navBTN">線上訂位</a></li>
-					<li><a href="javascript:;" class="text-decoration-none navBTN">冰淇淋訂購</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-
-	<div id="banner" class="">
-		<div class="bannerText p-3">
-			<h1 class="text-center">BUY+吃貨</h1>
-			<h3 class="text-center">輕食◆排餐◆下午茶</h3>
-		</div>
-		<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="images/banner/banner_01.jpg" class="" alt="" />
-				</div>
-				<div class="carousel-item">
-					<img src="images/banner/banner_02.jpg" class="" alt="" />
-				</div>
-				<div class="carousel-item">
-					<img src="images/banner/banner_03.jpg" class="" alt="" />
-				</div>
-			</div>
-			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-				<span class="fas fa-caret-left fa-2x" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-				<span class="fas fa-caret-right fa-2x" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
-	</div>
-
-	<div id="adintro" class="container-fluid">
-		<div class="wrap row py-xl-2 py-lg-2 py-md-2">
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 p-xl-2 p-lg-2 p-md-2 p-0 mx-auto">
-				<div class="aditem">
-					<img src="images/adintro/adintro_1.jpg" alt="" class="img-fluid"/>
-					<a href="javascript:;" class="adtext adtext_1 d-flex justify-content-center align-items-center text-decoration-none">
-						預約訂位
-					</a>
-				</div>
-			</div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 p-xl-2 p-lg-2 p-md-2 p-0 mx-auto">
-				<div class="aditem">
-					<img src="images/adintro/adintro_2.jpg" alt="" class="img-fluid"/>
-					<a href="javascript:;"  class="adtext adtext_2 d-flex justify-content-center align-items-center text-decoration-none">
-						點我追蹤
-					</a>
-				</div>
-			</div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 p-xl-2 p-lg-2 p-md-2 p-0 mx-auto">
-				<div class="aditem">
-					<img src="images/adintro/adintro_3.jpg" alt="" class="img-fluid"/>
-					<a href="javascript:;"  class="adtext adtext_3 d-flex justify-content-center align-items-center text-decoration-none">
-						加入BUY+
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="about" class="container">
-		<div class="row py-5 px-2">
-			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 aboutPic"></div>
-			<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 pt-4 px-4">
-				<h2 class="title py-3 ps-2 text-warning">|&nbsp;<img src="images/buyeat_text.svg" alt="BUY+吃貨" />&nbsp;|</h2>
-				<div class="ps-2">
-					<p>包後事統節；推人器時，個書林致就，大時來老水如金商灣注得，住此一府病。</p>
-					<p>數在物使正意。包後事統節；推人器時，個書林致就，大時來老水如金商灣注得，住此一府病，寫天經亞節緊來電可照方如常計領，聲保回！</p>
-					<p>包後事統節；推人器時，個書林致就，大時來老水如金商灣注得，住此一府病。</p>
-					<p>寫天經亞節緊來電可照方如常計領，聲保回！大時來他好動理特不後所預節求、規同有先好。</p>
-					<button type="button" class="d-block mx-auto allBTN"><a href="javascript:;" class="text-decoration-none text-white">預約訂位</a></button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- open time start -->
-	<div class="bgfixed time_bgfixed d-flex justify-content-center align-items-center">
-		<div class="">
-			<h2 class="title pb-3 ps-2 text-center text-white font-weight-bolder">|&nbsp;營業時間&nbsp;|</h2>
-			<p class="text-center text-white font-weight-bolder">星期一~星期日&nbsp;◆&nbsp;<span class="font-weight-bolder">全年無休</span></p>
-			<p class="text-center text-warning font-weight-bolder">10:00~21:30</p>
-		</div>
-	</div>
-	
-	<div id="meal" class="container py-5">
-		<h2 class="title py-3 ps-2 text-center text-dark font-weight-bolder">|&nbsp;餐點介紹&nbsp;|</h2>
-		<div class="row text-white">
-			<div class="col-xl-4 col-lg-4 col-md-6 col-12 py-4">
-				<div class="meal_imgBox">
-					<a href="images/meal/mael_01.jpg" data-lightbox="roadtrip"><img src="images/meal/mael_01.jpg" class="img-fluid img_scale" /></a>
-				</div>
-				<div class="mealintro">
-					<i class="fas fa-utensils d-block meal_icon text-center"></i>
-					<h4 class="text-center text-warning py-1">主餐系列</h4>
-					<p>化的治，心日不小時家萬文的是則好只急性就國力他生光國性必走大未媽夫看多與在魚技從飛的正</p>
-				</div>
-			</div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-12 py-4">
-				<div class="meal_imgBox">
-					<a href="images/meal/mael_02.jpg" data-lightbox="roadtrip"><img src="images/meal/mael_02.jpg" class="img-fluid img_scale" /></a>
-				</div>
-				<div class="mealintro">
-					<i class="fas fa-ice-cream d-block text-center meal_icon"></i>
-					<h4 class="text-center text-warning py-1">甜點系列</h4>
-					<p>化的治，心日不小時家萬文的是則好只急性就國力他生光國性必走大未媽夫看多與在魚技從飛的正</p>
-				</div>
-			</div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-12 py-4">
-				<div class="meal_imgBox">
-					<a href="images/meal/mael_03.jpg" data-lightbox="roadtrip"><img src="images/meal/mael_03.jpg" class="img-fluid img_scale" /></a>
-				</div>
-				<div class="mealintro">
-					<i class="fas fa-coffee d-block text-center meal_icon"></i>
-					<h4 class="text-center text-warning py-1">飲品系列</h4>
-					<p>化的治，心日不小時家萬文的是則好只急性就國力他生光國性必走大未媽夫看多與在魚技從飛的正</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- booking tel number start -->
-	<div class="bgfixed booking_bgfixed d-flex justify-content-center align-items-center">
-		<div>
-			<h2 class="title pb-3 ps-2 text-center font-weight-bolder text-white">|&nbsp;訂位專線&nbsp;|</h2>
-			<p class="text-center font-weight-bolder text-warning">04-1234-5678</p>
-			<p class="text-center font-weight-bolder text-white">台中市北區三民路三段XXX號</p>
-		</div>
-	</div>
-	
-	<div id="advideo" class="container py-5">
-		<h2 class="title py-3 ps-2 text-center font-weight-bolder text-dark">|&nbsp;優惠活動&nbsp;|</h2>
-		<iframe width="100%" height="700px" class="d-block mx-auto py-3" src="https://www.youtube.com/embed/JsHqEpWQl-8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</div>
-
-	<div id="contact" class="bgfixed contact_bgfixed py-5 text-white">
-		<div class="container">
-			<h2 class="title py-3 ps-2 text-center font-weight-bolder">|&nbsp;聯絡─BUY+吃貨&nbsp;|</h2>
-			<p class="text-center font-weight-bold">用心製作餐點是我們的堅持，期待您的來訪，享受愜意時光。</p>
-			<div class="row">
-				<div class="col-xl-6 col-lg-6 col-12 py-3">
-					<form action="" id="" method="post" class="row">
-						<div class="col-12 py-2">
-							<input class="form-control" type="text" id="" name="" placeholder="請輸入姓名" required="required" />
-						</div>
-						<div class="col-12 py-2">
-							<input class="form-control" type="tel" id="" name="" placeholder="請輸入電話" required="required" />
-						</div>
-						<div class="col-12 py-2">
-							<input class="form-control" type="email" id="" name="" placeholder="請輸入E-mail" required="required" />
-						</div>
-						<div class="col-12 py-2">
-							<textarea class="form-control" id="" name="" placeholder="請輸入留言內容"  required="required" rows="11"></textarea>
-						</div>
-						<div class="col-12 text-center py-3">
-							<button class="allBTN text-white mx-3" type="submit">送出表單</button>
-							<button class="allBTN text-white mx-3" type="reset">重新填寫</button>
-						</div>
-					</form>
-				</div>
-				<div class="col-xl-6 col-lg-6 col-12 py-3">
-					<div class="row justify-content-around">
-						<div class="contact_info pt-2">
-							<p><span class="fas fa-home text-warning"></span>&nbsp;台中市北區三民路三段XXX號</p>
-							<p><span class="fas fa-clock text-warning"></span>&nbsp;星期一~星期日 10:00~21:30</p>
-							<p>
-								<span class="fas fa-phone text-warning"></span>&nbsp;
-								<a href="tel:+886-800-000-789" class="text-decoration-none">0800-000-789</a>
-							</p>
-							<p>
-								<span class="fas fa-envelope text-warning"></span>&nbsp;
-								<a href="mailto:ps789096@gmail.com?subject=BUY+吃貨,使用者來信&cc=ps689535@gmail.com&bcc=s91123@hotmail.com&body=姓名：%0d%0d連絡電話：%0d%0d詢問事項：%0d" class="text-decoration-none">ps789096@gmail.com</a>
-							</p>
-						</div>
-						<div class="contact_icon">
-							<a href="javascript:;" class=""><i class="p-1 fab fa-line"></i></a>
-							<a href="javascript:;" class=""><i class="p-1 fab fa-facebook-square"></i></a>
-							<a href="javascript:;" class=""><i class="p-1 fab fa-instagram-square"></i></a>
-							<a href="javascript:;" class=""><i class="p-1 fab fa-youtube-square"></i></a>
-						</div>
-						<div class="map col-12">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.562555910047!2d120.68289071545682!3d24.151995979231707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d67d3b8bd43%3A0x7b6a785207a0a882!2z5Y-w5Lit5biC5YyX5Y2A5LiJ5rCR6Lev5LiJ5q61!5e0!3m2!1szh-TW!2stw!4v1624384081434!5m2!1szh-TW!2stw" width="95%" height="250" style="border:0;" allowfullscreen="" loading="lazy" class="d-block mx-auto"></iframe>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<footer class="p-3">
-		<p class="text-center m-1">Design by<a href="javascript:;" target="_blank" class="text-decoration-none text-warning"> HsiuJu</a></p>
-		<p class="text-center m-1">本作品為課堂習作，虛擬商店，並無商業行為，特此聲明
-		<br />本網站所有資料乃搜集自網路，版權屬原作者所有</p>
-	</footer>
-
-	<div class="iconDIV">
-			<a href="tel:+886-800-000-789" class="text-decoration-none"><i class="fas fa-phone"></i></a>
-			<a href="#" class="text-decoration-none top"><i class="fas fa-arrow-circle-up"></i></a>
-	</div>
-
-	<script src="assets/jquery-3.6.0.min.js"></script>
-	<script src="assets/jquery.easing.1.3.js"></script>
-	<script src="assets/bootstrap_460/js/bootstrap.min.js"></script>
-	<script src="assets/popper.min.js"></script>
-	<script src="assets/lightbox/js/lightbox.min.js"></script>
-	<script src="assets/index.js"></script>
+	<h1>Ch1</h1>
+	<table>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">1. 電腦與電腦之間或電腦與終端機之間為相互交換資訊的格式和內容而訂定一套規則，稱為
+				<ol type="a">
+					<li><span><input type="radio" name="309]" value="1"></span>IP</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="309]" value="2"></span>通訊協定
+					</li>
+					<li><span><input type="radio" name="309]" value="3"></span>TCP</li>
+					<li><span><input type="radio" name="309]" value="4"></span>以上皆是</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">2. 目前在家準備上網的裝備須有
+				<ol type="a">
+					<li><span><input type="radio" name="313]" value="1"></span>網際網路</li>
+					<li><span><input type="radio" name="313]" value="2"></span>電話門號與數據機</li>
+					<li><span><input type="radio" name="313]" value="3"></span>電腦和作業系統</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="313]" value="4"></span>以上皆是
+					</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">3. 兩部電腦使用網路卡直接連接而不透過Hub/Switch時，網路線必須做何處理？
+				<ol type="a">
+					<li><span><input type="radio" name="311]" value="1"></span>任何網路線均可</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="311]" value="2"></span>要經過跳線
+					</li>
+					<li><span><input type="radio" name="311]" value="3"></span>這種方式行不通</li>
+					<li><span><input type="radio" name="311]" value="4"></span>以上皆非</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">4. 網際網路的發展起源是
+				<ol type="a">
+					<li><span style="background-color: green"><input type="radio" checked="" name="310]" value="1"></span>國防之需
+					</li>
+					<li><span><input type="radio" name="310]" value="2"></span>學術界之需</li>
+					<li><span><input type="radio" name="310]" value="3"></span>商業界之需</li>
+					<li><span><input type="radio" name="310]" value="4"></span>以上皆非</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">5. 網際網路英文簡稱是
+				<ol type="a">
+					<li><span><input type="radio" name="315]" value="1"></span>LAN</li>
+					<li><span><input type="radio" name="315]" value="2"></span>MAN</li>
+					<li><span><input type="radio" name="315]" value="3"></span>WAN</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="315]" value="4"></span>Internet
+					</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">6. TCP/IP是什麼的簡稱
+				<ol type="a">
+					<li><span><input type="radio" name="314]" value="1"></span>位址</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="314]"
+								value="2"></span>傳輸控制協定及網際網路協定</li>
+					<li><span><input type="radio" name="314]" value="3"></span>網際網路工程任務小組</li>
+					<li><span><input type="radio" name="314]" value="4"></span>以上皆非</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">7. 802.11n理論值的速率為
+				<ol type="a">
+					<li><span><input type="radio" name="320]" value="1"></span>100Mbps</li>
+					<li><span><input type="radio" name="320]" value="2"></span>300Mbps</li>
+					<li><span><input type="radio" name="320]" value="3"></span>500Mbps</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="320]" value="4"></span>600Mbps
+					</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">8. 下列何者為電腦網路的優點
+				<ol type="a">
+					<li><span><input type="radio" name="307]" value="1"></span>遠端遙控</li>
+					<li><span><input type="radio" name="307]" value="2"></span>資源可以共享</li>
+					<li><span><input type="radio" name="307]" value="3"></span>提升通訊能力</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="307]" value="4"></span>以上皆是
+					</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">9. 用戶若想在家裡上網，就必須透過誰的連線服務
+				<ol type="a">
+					<li><span><input type="radio" name="312]" value="1"></span>IP</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="312]" value="2"></span>ISP</li>
+					<li><span><input type="radio" name="312]" value="3"></span>電腦和作業系統</li>
+					<li><span><input type="radio" name="312]" value="4"></span>WWW</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">10. 傳輸速率11Mbps的無線網卡，遵循的國際標準是
+				<ol type="a">
+					<li><span><input type="radio" name="317]" value="1"></span>802.11a</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="317]" value="2"></span>802.11b
+					</li>
+					<li><span><input type="radio" name="317]" value="3"></span>802.11g</li>
+					<li><span><input type="radio" name="317]" value="4"></span>以上皆非</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">11. SDN交換器所用的協定為
+				<ol type="a">
+					<li><span><input type="radio" name="323]" value="1"></span>TCP</li>
+					<li><span><input type="radio" name="323]" value="2"></span>UDP</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="323]" value="3"></span>OpenFlow
+					</li>
+					<li><span><input type="radio" name="323]" value="4"></span>PPP</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">12. 電腦網路的節點可以是一台
+				<ol type="a">
+					<li><span><input type="radio" name="308]" value="1"></span>電腦</li>
+					<li><span><input type="radio" name="308]" value="2"></span>交換器</li>
+					<li><span><input type="radio" name="308]" value="3"></span>印表機</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="308]" value="4"></span>以上皆是
+					</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">13. 有關區域網路的敘述，下列那一項敘述不正確
+				<ol type="a">
+					<li><span><input type="radio" name="316]" value="1"></span>網路可以僅由兩部電腦組成</li>
+					<li><span><input type="radio" name="316]" value="2"></span>短距離的通訊網路</li>
+					<li><span><input type="radio" name="316]" value="3"></span>軟硬體資源共享</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="316]"
+								value="4"></span>無法作Email傳送
+					</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">14. 有需求立即可用的軟體服務稱為
+				<ol type="a">
+					<li><span><input type="radio" name="322]" value="1"></span>Iaas</li>
+					<li><span><input type="radio" name="322]" value="2"></span>Paas</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="322]" value="3"></span>Saas
+					</li>
+					<li><span><input type="radio" name="322]" value="4"></span>以上皆是</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">15. 一個互連的網路可以包含
+				<ol type="a">
+					<li><span><input type="radio" name="321]" value="1"></span>LANs</li>
+					<li><span><input type="radio" name="321]" value="2"></span>MANs</li>
+					<li><span><input type="radio" name="321]" value="3"></span>WANs</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="321]" value="4"></span>以上皆是
+					</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">16. 802.11ac所使用的頻段為
+				<ol type="a">
+					<li><span><input type="radio" name="319]" value="1"></span>2.4GHz</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="319]" value="2"></span>5GHz
+					</li>
+					<li><span><input type="radio" name="319]" value="3"></span>7GHz</li>
+					<li><span><input type="radio" name="319]" value="4"></span>60GHz</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">17. SDN交換器與現今網路交換器最主要不同為
+				<ol type="a">
+					<li><span><input type="radio" name="324]" value="1"></span>只能轉發資料</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="324]"
+								value="2"></span>能轉發資料及控制訊號
+					</li>
+					<li><span><input type="radio" name="324]" value="3"></span>只能轉發資料控制訊號</li>
+					<li><span><input type="radio" name="324]" value="4"></span>以上都有可能</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">18. 802.11ad所使用的最高頻段為
+				<ol type="a">
+					<li><span><input type="radio" name="318]" value="1"></span>2.4GHz</li>
+					<li><span><input type="radio" name="318]" value="2"></span>5GHz</li>
+					<li><span><input type="radio" name="318]" value="3"></span>7GHz</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="318]" value="4"></span>60GHz。
+					</li>
+				</ol>
+			</td>
+		</tr>
+	</table>
+	<h1>Ch2</h1>
+	<table>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">1. 週期等於10μs，表示頻率為？
+				<ol type="a">
+					<li><span style="background-color: green"><input type="radio" checked="" name="326]" value="1"></span>0.1MHz
+					</li>
+					<li><span><input type="radio" name="326]" value="2"></span>1MHz</li>
+					<li><span><input type="radio" name="326]" value="3"></span>10MHz</li>
+					<li><span><input type="radio" name="326]" value="4"></span>以上皆非</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">2.
+				三條輸入路線路使用同步式TDM進行傳送。第一條線路有6個時間槽的資料，其他兩條各有3個時間槽的資料。如果每個輸出訊框可以載送3個時間槽的資料，請問共有多少個訊框可以被傳送？
+				<ol type="a">
+					<li><span><input type="radio" name="342]" value="1"></span>1</li>
+					<li><span><input type="radio" name="342]" value="2"></span>3</li>
+					<li><span><input type="radio" name="342]" value="3"></span>4</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="342]" value="4"></span>6</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">3. 訊號頻率成份的集合稱為
+				<ol type="a">
+					<li><span style="background-color: green"><input type="radio" checked="" name="337]" value="1"></span>頻譜</li>
+					<li><span><input type="radio" name="337]" value="2"></span>複合訊號</li>
+					<li><span><input type="radio" name="337]" value="3"></span>頻寬</li>
+					<li><span><input type="radio" name="337]" value="4"></span>頻帶</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">4. 假設訊息碼為10000101001，使用AMI編碼後，可得出
+				<ol type="a">
+					<li><span><input type="radio" name="332]" value="1"></span>+10000-10-100+1</li>
+					<li><span><input type="radio" name="332]" value="2"></span>+10000-10+100+1</li>
+					<li><span><input type="radio" name="332]" value="3"></span>+10000-10-100-1</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="332]"
+								value="4"></span>+10000-10+100-1</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">5. 5Hz表示每秒變化
+				<ol type="a">
+					<li><span><input type="radio" name="325]" value="1"></span>0.5週</li>
+					<li><span><input type="radio" name="325]" value="2"></span>10週</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="325]" value="3"></span>5週</li>
+					<li><span><input type="radio" name="325]" value="4"></span>以上皆非</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">6. 若位元傳速率是2000bps，位元區間為何?
+				<ol type="a">
+					<li><span><input type="radio" name="328]" value="1"></span>0.25ms</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="328]" value="2"></span>0.5ms
+					</li>
+					<li><span><input type="radio" name="328]" value="3"></span>0.25s</li>
+					<li><span><input type="radio" name="328]" value="4"></span>0.5s</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">7. 若位元傳速率是5000bps，則0.05秒內可傳多少位元?
+				<ol type="a">
+					<li><span><input type="radio" name="329]" value="1"></span>10k</li>
+					<li><span><input type="radio" name="329]" value="2"></span>0.1k</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="329]" value="3"></span>0.25k
+					</li>
+					<li><span><input type="radio" name="329]" value="4"></span>5k</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">8. 用來分割可用頻寬給多個使用者的方法稱為
+				<ol type="a">
+					<li><span><input type="radio" name="339]" value="1"></span>TDM</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="339]" value="2"></span>多工</li>
+					<li><span><input type="radio" name="339]" value="3"></span>PCM</li>
+					<li><span><input type="radio" name="339]" value="4"></span>FDM</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">9. 一個訊號的頻寬是20MHz，根據Nyquist定理，PCM編碼最小的取樣率為何？
+				<ol type="a">
+					<li><span><input type="radio" name="340]" value="1"></span>每秒80M次取樣</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="340]" value="2"></span>每秒40M次取樣
+					</li>
+					<li><span><input type="radio" name="340]" value="3"></span>每秒20M次取樣</li>
+					<li><span><input type="radio" name="340]" value="4"></span>每秒10M次取樣</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">10. 一種透過數位傳輸介質來傳送連續資料的方法，它包含取樣和量化稱為
+				<ol type="a">
+					<li><span><input type="radio" name="338]" value="1"></span>TDM</li>
+					<li><span><input type="radio" name="338]" value="2"></span>多工</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="338]" value="3"></span>PCM</li>
+					<li><span><input type="radio" name="338]" value="4"></span>FDM</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">11. 一訊號每秒取樣8000次，每個取樣有16位元，位元傳速率為
+				<ol type="a">
+					<li><span><input type="radio" name="333]" value="1"></span>64kbps</li>
+					<li><span><input type="radio" name="333]" value="2"></span>96kbps</li>
+					<li><span><input type="radio" name="333]" value="3"></span>112kbps</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="333]" value="4"></span>128kbps
+					</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">12. 廣播電視節目的播放屬
+				<ol type="a">
+					<li><span><input type="radio" name="335]" value="1"></span>全雙工傳輸</li>
+					<li><span><input type="radio" name="335]" value="2"></span>半雙工傳輸</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="335]" value="3"></span>單工傳輸
+					</li>
+					<li><span><input type="radio" name="335]" value="4"></span>以上皆非</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">13. NRZ-I編碼有幾個電位位階?
+				<ol type="a">
+					<li><span><input type="radio" name="331]" value="1"></span>1</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="331]" value="2"></span>2</li>
+					<li><span><input type="radio" name="331]" value="3"></span>3</li>
+					<li><span><input type="radio" name="331]" value="4"></span>4</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">14. 下列何者為網路或資料的傳輸速率單位
+				<ol type="a">
+					<li><span><input type="radio" name="327]" value="1"></span>byte</li>
+					<li><span><input type="radio" name="327]" value="2"></span>Hz</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="327]" value="3"></span>bps</li>
+					<li><span><input type="radio" name="327]" value="4"></span>以上皆可</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">15. 一段5分鐘的類比語音，若採用電話語音的取樣頻率8KHz，編碼長度16bits，試求數位化後的資料量?
+				<ol type="a">
+					<li><span><input type="radio" name="334]" value="1"></span>3.6MB</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="334]" value="2"></span>4.8MB
+					</li>
+					<li><span><input type="radio" name="334]" value="3"></span>6MB</li>
+					<li><span><input type="radio" name="334]" value="4"></span>7.2MB</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">16. 一複合訊號可以分解成4個正弦波組成即1kHz、1.2kHz、1.5kHz、3kHz，則此混合訊號頻寬為何?
+				<ol type="a">
+					<li><span><input type="radio" name="330]" value="1"></span>1kHz</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="330]" value="2"></span>2kHz
+					</li>
+					<li><span><input type="radio" name="330]" value="3"></span>3kHz</li>
+					<li><span><input type="radio" name="330]" value="4"></span>4kHz</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">17. 在時域圖上只有一條水平線的訊號時的取樣率為何？
+				<ol type="a">
+					<li><span><input type="radio" name="341]" value="1"></span>任何值均可</li>
+					<li><span style="background-color: green"><input type="radio" checked="" name="341]" value="2"></span>0</li>
+					<li><span><input type="radio" name="341]" value="3"></span>無窮大</li>
+					<li><span><input type="radio" name="341]" value="4"></span>以上皆非</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">18. BRI的D0通道速率為
+				<ol type="a">
+					<li><span style="background-color: green"><input type="radio" checked="" name="336]" value="1"></span>16kbps
+					</li>
+					<li><span><input type="radio" name="336]" value="2"></span>24kbps</li>
+					<li><span><input type="radio" name="336]" value="3"></span>48kbps</li>
+					<li><span><input type="radio" name="336]" value="4"></span>64kbps</li>
+				</ol>
+			</td>
+		</tr>
+	</table>
+	<h1>Ch3</h1>
+	<table>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">1. OSI模型中將網路的架構定義成
+				<ol type="a">
+					<li><span><input type="radio" name="343]" value="1"></span>四個層次</li>
+					<li><span><input type="radio" name="343]" value="2"></span>五個層次</li>
+					<li><span style="background-color: green"><input type="radio" name="343]" value="3" checked=""></span>七個層次
+					</li>
+					<li><span><input type="radio" name="343]" value="4"></span>以上皆非</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">2. DoD模型中將網路的架構定義成
+				<ol type="a">
+					<li><span style="background-color: green"><input type="radio" name="344]" value="1" checked=""></span>四個層次
+					</li>
+					<li><span><input type="radio" name="344]" value="2"></span>五個層次</li>
+					<li><span><input type="radio" name="344]" value="3"></span>七個層次</li>
+					<li><span><input type="radio" name="344]" value="4"></span>以上皆非</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">3. 負責跳躍點對跳躍點(hop-to-hop)的傳輸。
+				<ol type="a">
+					<li><span><input type="radio" name="345]" value="1"></span>實體層</li>
+					<li><span style="background-color: green"><input type="radio" name="345]" value="2" checked=""></span>數據鏈路層
+					</li>
+					<li><span><input type="radio" name="345]" value="3"></span>網路層</li>
+					<li><span><input type="radio" name="345]" value="4"></span>傳輸層</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">4. 負責整個訊息端點對端點無錯誤地傳送
+				<ol type="a">
+					<li><span><input type="radio" name="346]" value="1"></span>表現層</li>
+					<li><span><input type="radio" name="346]" value="2"></span>交談層</li>
+					<li><span><input type="radio" name="346]" value="3"></span>網路層</li>
+					<li><span style="background-color: green"><input type="radio" name="346]" value="4" checked=""></span>傳輸層</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">5. 建立、維護並同步通訊系統之間的互動
+				<ol type="a">
+					<li><span><input type="radio" name="347]" value="1"></span>表現層</li>
+					<li><span style="background-color: green"><input type="radio" name="347]" value="2" checked=""></span>交談層</li>
+					<li><span><input type="radio" name="347]" value="3"></span>網路層</li>
+					<li><span><input type="radio" name="347]" value="4"></span>傳輸層</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">6. 負責翻譯、加密及壓縮為
+				<ol type="a">
+					<li><span style="background-color: green"><input type="radio" name="348]" value="1" checked=""></span>表現層</li>
+					<li><span><input type="radio" name="348]" value="2"></span>交談層</li>
+					<li><span><input type="radio" name="348]" value="3"></span>應用層</li>
+					<li><span><input type="radio" name="348]" value="4"></span>傳輸層</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">7. 能讓使用者或軟體都可以順利地存取網路為
+				<ol type="a">
+					<li><span><input type="radio" name="349]" value="1"></span>表現層</li>
+					<li><span><input type="radio" name="349]" value="2"></span>交談層</li>
+					<li><span style="background-color: green"><input type="radio" name="349]" value="3" checked=""></span>應用層</li>
+					<li><span><input type="radio" name="349]" value="4"></span>傳輸層</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">8. 能將位元轉換成電訊息。
+				<ol type="a">
+					<li><span style="background-color: green"><input type="radio" name="350]" value="1" checked=""></span>實體層</li>
+					<li><span><input type="radio" name="350]" value="2"></span>數據鏈路層</li>
+					<li><span><input type="radio" name="350]" value="3"></span>網路層</li>
+					<li><span><input type="radio" name="350]" value="4"></span>傳輸層</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">9. 在傳送的過程中，由較高層或較低層傳送的PDU會加上標頭，此程序稱為
+				<ol type="a">
+					<li><span style="background-color: green"><input type="radio" name="351]" value="1" checked=""></span>封裝</li>
+					<li><span><input type="radio" name="351]" value="2"></span>解封裝</li>
+					<li><span><input type="radio" name="351]" value="3"></span>切割</li>
+					<li><span><input type="radio" name="351]" value="4"></span>多工</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">10. OSI最上面的三層在TCP/IP中僅以單獨的一層表示被稱為
+				<ol type="a">
+					<li><span><input type="radio" name="352]" value="1"></span>表現層</li>
+					<li><span><input type="radio" name="352]" value="2"></span>交談層</li>
+					<li><span style="background-color: green"><input type="radio" name="352]" value="3" checked=""></span>應用層</li>
+					<li><span><input type="radio" name="352]" value="4"></span>傳輸層</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">11. OSI的哪一層，其資料單位被稱為訊框(frame)
+				<ol type="a">
+					<li><span><input type="radio" name="353]" value="1"></span>實體層</li>
+					<li><span style="background-color: green"><input type="radio" name="353]" value="2" checked=""></span>數據鏈路層
+					</li>
+					<li><span><input type="radio" name="353]" value="3"></span>網路層</li>
+					<li><span><input type="radio" name="353]" value="4"></span>傳輸層</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">12. 常用的電子郵件(e-mail)服務屬於OSI的哪一層
+				<ol type="a">
+					<li><span><input type="radio" name="354]" value="1"></span>表現層</li>
+					<li><span><input type="radio" name="354]" value="2"></span>數據鏈路層</li>
+					<li><span style="background-color: green"><input type="radio" name="354]" value="3" checked=""></span>應用層</li>
+					<li><span><input type="radio" name="354]" value="4"></span>傳輸層</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">13. 哪一層可以使用訊框的標尾來進行錯誤偵測
+				<ol type="a">
+					<li><span><input type="radio" name="355]" value="1"></span>表現層</li>
+					<li><span style="background-color: green"><input type="radio" name="355]" value="2" checked=""></span>數據鏈路層
+					</li>
+					<li><span><input type="radio" name="355]" value="3"></span>應用層</li>
+					<li><span><input type="radio" name="355]" value="4"></span>傳輸層</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">14. 當資料封包從低層往它的上層移動的時候，標頭會被
+				<ol type="a">
+					<li><span style="background-color: green"><input type="radio" name="356]" value="1" checked=""></span>移除</li>
+					<li><span><input type="radio" name="356]" value="2"></span>加入</li>
+					<li><span><input type="radio" name="356]" value="3"></span>保留</li>
+					<li><span><input type="radio" name="356]" value="4"></span>修改</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">15. 位於網路層和交談層之間的層稱為
+				<ol type="a">
+					<li><span><input type="radio" name="357]" value="1"></span>表現層</li>
+					<li><span><input type="radio" name="357]" value="2"></span>數據鏈路層</li>
+					<li><span><input type="radio" name="357]" value="3"></span>應用層</li>
+					<li><span style="background-color: green"><input type="radio" name="357]" value="4" checked=""></span>傳輸層</li>
+				</ol>
+			</td>
+		</tr>
+	</table>
+	<h1>Ch4</h1>
+	<table>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">1. 下列何者是導引式媒介?
+				<ol type="a">
+					<li><span><input type="radio" name="358]" value="1"></span>雙絞線</li>
+					<li><span><input type="radio" name="358]" value="2"></span>同軸電纜線</li>
+					<li><span><input type="radio" name="358]" value="3"></span>光纖纜線</li>
+					<li><span style="background-color: green"><input type="radio" name="358]" value="4" checked=""></span>以上皆是
+					</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">2. 適用於100Base-TX高速乙太網路的雙絞線類別為何?
+				<ol type="a">
+					<li><span><input type="radio" name="359]" value="1"></span>類別3</li>
+					<li><span style="background-color: green"><input type="radio" name="359]" value="2" checked=""></span>類別5</li>
+					<li><span><input type="radio" name="359]" value="3"></span>類別5e</li>
+					<li><span><input type="radio" name="359]" value="4"></span>類別6</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">3. 適用於1000Base-T乙太網路的雙絞線類別為何?
+				<ol type="a">
+					<li><span><input type="radio" name="360]" value="1"></span>類別3</li>
+					<li><span><input type="radio" name="360]" value="2"></span>類別5</li>
+					<li><span style="background-color: green"><input type="radio" name="360]" value="3" checked=""></span>類別5e
+					</li>
+					<li><span><input type="radio" name="360]" value="4"></span>類別6</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">4. 10Base2的最大傳輸距離?
+				<ol type="a">
+					<li><span style="background-color: green"><input type="radio" name="361]" value="1" checked=""></span>185公尺
+					</li>
+					<li><span><input type="radio" name="361]" value="2"></span>300公尺</li>
+					<li><span><input type="radio" name="361]" value="3"></span>500公尺</li>
+					<li><span><input type="radio" name="361]" value="4"></span>2000公尺</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">5. 10Base5的最大傳輸距離?
+				<ol type="a">
+					<li><span><input type="radio" name="362]" value="1"></span>185公尺</li>
+					<li><span><input type="radio" name="362]" value="2"></span>300公尺</li>
+					<li><span style="background-color: green"><input type="radio" name="362]" value="3" checked=""></span>500公尺
+					</li>
+					<li><span><input type="radio" name="362]" value="4"></span>2000公尺</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">6. 多模光纖規格若為62.5/125代表傳導核心為何?
+				<ol type="a">
+					<li><span><input type="radio" name="363]" value="1"></span>125m</li>
+					<li><span><input type="radio" name="363]" value="2"></span>125μm</li>
+					<li><span><input type="radio" name="363]" value="3"></span>62.5m</li>
+					<li><span style="background-color: green"><input type="radio" name="363]" value="4" checked=""></span>62.5μm
+					</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">7. 中繼器的功能是對應到OSI模型中的哪一層?
+				<ol type="a">
+					<li><span style="background-color: green"><input type="radio" name="364]" value="1" checked=""></span>實體層</li>
+					<li><span><input type="radio" name="364]" value="2"></span>數據鏈路層</li>
+					<li><span><input type="radio" name="364]" value="3"></span>網路層</li>
+					<li><span><input type="radio" name="364]" value="4"></span>傳輸層</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">8. 當橋接器收到訊框時，會根據橋接表中的目的MAC位址來決定訊框需不需要送到另一網路區段，稱為?
+				<ol type="a">
+					<li><span style="background-color: green"><input type="radio" name="365]" value="1" checked=""></span>過濾</li>
+					<li><span><input type="radio" name="365]" value="2"></span>轉送</li>
+					<li><span><input type="radio" name="365]" value="3"></span>路徑選擇</li>
+					<li><span><input type="radio" name="365]" value="4"></span>以上皆非</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">9. 會分割廣播網域為何種設備？
+				<ol type="a">
+					<li><span><input type="radio" name="366]" value="1"></span>第2層交換器</li>
+					<li><span style="background-color: green"><input type="radio" name="366]" value="2" checked=""></span>第3層交換器
+					</li>
+					<li><span><input type="radio" name="366]" value="3"></span>橋接器</li>
+					<li><span><input type="radio" name="366]" value="4"></span>集線器</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">10. 閘道器是運作在OSI模型中
+				<ol type="a">
+					<li><span><input type="radio" name="367]" value="1"></span>3個層</li>
+					<li><span><input type="radio" name="367]" value="2"></span>4個層</li>
+					<li><span><input type="radio" name="367]" value="3"></span>5個層</li>
+					<li><span style="background-color: green"><input type="radio" name="367]" value="4" checked=""></span>7個層的網路設備
+					</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">11. 下列哪種設備可以分割碰撞區域，但不能分割廣播網域
+				<ol type="a">
+					<li><span style="background-color: green"><input type="radio" name="368]" value="1" checked=""></span>第2層交換器
+					</li>
+					<li><span><input type="radio" name="368]" value="2"></span>TDM</li>
+					<li><span><input type="radio" name="368]" value="3"></span>集線器</li>
+					<li><span><input type="radio" name="368]" value="4"></span>路由器</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">12. 下列哪種設備不可以分割碰撞區域，也不能分割廣播網域
+				<ol type="a">
+					<li><span><input type="radio" name="369]" value="1"></span>第2層交換器</li>
+					<li><span><input type="radio" name="369]" value="2"></span>MUX</li>
+					<li><span style="background-color: green"><input type="radio" name="369]" value="3" checked=""></span>集線器</li>
+					<li><span><input type="radio" name="369]" value="4"></span>以上皆可</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">13. 下列哪種設備可以分割碰撞區域及廣播網域
+				<ol type="a">
+					<li><span><input type="radio" name="370]" value="1"></span>第2層交換器</li>
+					<li><span><input type="radio" name="370]" value="2"></span>TDM</li>
+					<li><span><input type="radio" name="370]" value="3"></span>集線器</li>
+					<li><span style="background-color: green"><input type="radio" name="370]" value="4" checked=""></span>路由器</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg04 font01">
+			<td align="left" class="item_content">14. 第2層交換器常以什麼技術分割廣播區域
+				<ol type="a">
+					<li><span style="background-color: green"><input type="radio" name="371]" value="1" checked=""></span>VLAN
+					</li>
+					<li><span><input type="radio" name="371]" value="2"></span>LAN</li>
+					<li><span><input type="radio" name="371]" value="3"></span>MAN</li>
+					<li><span><input type="radio" name="371]" value="4"></span>WAN</li>
+				</ol>
+			</td>
+		</tr>
+		<tr class="bg03 font01">
+			<td align="left" class="item_content">15. 要解決廣播風暴問題，可以採取____方式來解決迴路造成的問題
+				<ol type="a">
+					<li><span><input type="radio" name="372]" value="1"></span>VLAN</li>
+					<li><span style="background-color: green"><input type="radio" name="372]" value="2"
+								checked=""></span>擴展樹(spanningtree)演算法</li>
+					<li><span><input type="radio" name="372]" value="3"></span>第2層交換器</li>
+					<li><span><input type="radio" name="372]" value="4"></span>以上皆非</li>
+				</ol>
+			</td>
+		</tr>
+	</table>
 </body>
+
 </html>
