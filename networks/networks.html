@@ -745,115 +745,251 @@
 		</tr>
 	</table>
 	<h1>Ch5</h1>
-	<table>
-		<tr class="bg03 font01">
-			<td align="left" class="item_content">1. 區域網路的基本元件為何?
-				<ol type="a">
-					<li><span><input type="radio" value="1"></span>網路卡</li>
-					<li><span><input type="radio" value="2"></span>網路線</li>
-					<li><span><input type="radio" value="3"></span>網路主機</li>
-					<li><span style="background-color: green"><input checked="" type="radio" value="4"></span>以上皆是</li>
-				</ol>
-			</td>
-		</tr>
-		<tr class="bg04 font01">
-			<td align="left" class="item_content">2. CSMA/CD控制與規範為何類標準?
-				<ul>
-					<li><span></span>IEEE 802.3</li>
-				</ul>
-			</td>
-		</tr>
-		<tr class="bg03 font01">
-			<td align="left" class="item_content">3. 10Base5佈放的纜線為何?
-				<ul>
-					<li><span></span>RG-11粗同軸纜線</li>
-				</ul>
-			</td>
-		</tr>
-		<tr class="bg04 font01">
-			<td align="left" class="item_content">4. 10Base2的最大傳輸距離?
-				<ul>
-					<li><span></span>RG-58 A/U細同軸纜線</li>
-				</ul>
-			</td>
-		</tr>
-		<tr class="bg03 font01">
-			<td align="left" class="item_content">5. 10BaseT最大傳輸距離為何?
-				<ul>
-					<li><span></span>100公尺</li>
-				</ul>
-			</td>
-		</tr>
-		<tr class="bg04 font01">
-			<td align="left" class="item_content">6. 何者不具有Repeater功能的光纖集線器?
-				<ul>
-					<li><span></span>10BaseFP</li>
-				</ul>
-			</td>
-		</tr>
-		<tr class="bg03 font01">
-			<td align="left" class="item_content">7. 何者使用三階多準位傳輸(Multilevel transmission3: MIT-3)對訊號做編碼?
-				<ul>
-					<li><span></span>100BaseTX</li>
-				</ul>
-			</td>
-		</tr>
-		<tr class="bg04 font01">
-			<td align="left" class="item_content">8. 何者使用短波光纖?
-				<ul>
-					<li><span></span>1000Base-SX</li>
-				</ul>
-			</td>
-		</tr>
-		<tr class="bg03 font01">
-			<td align="left" class="item_content">9. 何者使用長波光纖?
-				<ul>
-					<li><span></span>1000Base-LX</li>
-				</ul>
-			</td>
-		</tr>
-		<tr class="bg04 font01">
-			<td align="left" class="item_content">10. R4-45接頭其有幾個接點?
-				<ul>
-					<li><span></span>8個</li>
-				</ul>
-			</td>
-		</tr>
-		<tr class="bg03 font01">
-			<td align="left" class="item_content">11. 一個乙太訊框的最大長度為多少位元組(Byte)?
-				<ul>
-					<li><span></span>1518B</li>
-				</ul>
-			</td>
-		</tr>
-		<tr class="bg04 font01">
-			<td align="left" class="item_content">12. 一個乙太訊框中的最大酬載(Payload)長度為何?
-				<ul>
-					<li><span></span>1500B</li>
-				</ul>
-			</td>
-		</tr>
-		<tr class="bg03 font01">
-			<td align="left" class="item_content">13. Ether type上層使用的協定若為IP，其對應值為?
-				<ul>
-					<li><span></span>0x0800</li>
-				</ul>
-			</td>
-		</tr>
-		<tr class="bg04 font01">
-			<td align="left" class="item_content">14. 廣播用MAC位址其對應值為?
-				<ul>
-					<li><span></span>全部為1 (0xFFFFFFFFFF)</li>
-				</ul>
-			</td>
-		</tr>
-		<tr class="bg03 font01">
-			<td align="left" class="item_content">15. Enthernet II 連續7個交錯的訊號，做完發送端與接收端之間的同步。其值為?
-				<ul>
-					<li><span></span>01010101</li>
-				</ul>
-			</td>
-		</tr>
+	<table border="0" cellpadding="3" cellspacing="1" width="1000" class="cssTable">
+		<tbody>
+			<tr class="bg03 font01">
+
+				<td align="left" class="item_content">1. 區域網路的基本元件為何？
+					<ol type="a">
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635373][ANS01]"
+									value="1"></span>網路卡</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635373][ANS01]"
+									value="2"></span>網路線</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635373][ANS01]"
+									value="3"></span>網路主機</li>
+						<li><span style="background-color: green"><input type="radio"
+									name="ans[WM_ITEM1_1000100000_10067245_1648124562_635373][ANS01]" value="4" checked=""></span>以上皆是
+						</li>
+					</ol>
+				</td>
+			</tr>
+			<tr class="bg04 font01">
+
+				<td align="left" class="item_content">2. CSMA/CD控制與規範為何類標準？
+					<ol type="a">
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635374][ANS01]"
+									value="1"></span>IEEE802.2</li>
+						<li><span style="background-color: green"><input type="radio"
+									name="ans[WM_ITEM1_1000100000_10067245_1648124562_635374][ANS01]" value="2"
+									checked=""></span>IEEE802.3
+						</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635374][ANS01]"
+									value="3"></span>IEEE802.5</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635374][ANS01]"
+									value="4"></span>IEEE802.11</li>
+					</ol>
+				</td>
+			</tr>
+			<tr class="bg03 font01">
+
+				<td align="left" class="item_content">3. 10Base5佈放的纜線為何?
+					<ol type="a">
+						<li><span style="background-color: green"><input type="radio"
+									name="ans[WM_ITEM1_1000100000_10067245_1648124562_635375][ANS01]" value="1"
+									checked=""></span>RG-11粗同軸電纜
+						</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635375][ANS01]"
+									value="2"></span>RG-58A/U細同軸電纜</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635375][ANS01]"
+									value="3"></span>CAT.5</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635375][ANS01]"
+									value="4"></span>CAT.6</li>
+					</ol>
+				</td>
+			</tr>
+			<tr class="bg04 font01">
+
+				<td align="left" class="item_content">4. 10Base2佈放的纜線為何?
+					<ol type="a">
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635376][ANS01]"
+									value="1"></span>RG-11粗同軸電纜</li>
+						<li><span style="background-color: green"><input type="radio"
+									name="ans[WM_ITEM1_1000100000_10067245_1648124562_635376][ANS01]" value="2"
+									checked=""></span>RG-58A/U細同軸電纜</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635376][ANS01]"
+									value="3"></span>CAT.5</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635376][ANS01]"
+									value="4"></span>CAT.6</li>
+					</ol>
+				</td>
+			</tr>
+			<tr class="bg03 font01">
+
+				<td align="left" class="item_content">5. 10BaseT的最大傳輸距離為何?
+					<ol type="a">
+						<li><span style="background-color: green"><input type="radio"
+									name="ans[WM_ITEM1_1000100000_10067245_1648124562_635377][ANS01]" value="1" checked=""></span>100公尺
+						</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635377][ANS01]"
+									value="2"></span>185公尺</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635377][ANS01]"
+									value="3"></span>500公尺</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635377][ANS01]"
+									value="4"></span>2000公尺</li>
+					</ol>
+				</td>
+			</tr>
+			<tr class="bg04 font01">
+
+				<td align="left" class="item_content">6. 不具有Repeater功能的光纖集線器為何?
+					<ol type="a">
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635378][ANS01]"
+									value="1"></span>10BaseFL</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635378][ANS01]"
+									value="2"></span>10BaseFB</li>
+						<li><span style="background-color: green"><input type="radio"
+									name="ans[WM_ITEM1_1000100000_10067245_1648124562_635378][ANS01]" value="3" checked=""></span>10BaseFP
+						</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635378][ANS01]"
+									value="4"></span>以上皆是</li>
+					</ol>
+				</td>
+			</tr>
+			<tr class="bg03 font01">
+
+				<td align="left" class="item_content">7. 何者使用三階多準位傳輸(Multileveltransmission3；MLT-3)對訊號做編碼?
+					<ol type="a">
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635379][ANS01]"
+									value="1"></span>100BaseT4</li>
+						<li><span style="background-color: green"><input type="radio"
+									name="ans[WM_ITEM1_1000100000_10067245_1648124562_635379][ANS01]" value="2"
+									checked=""></span>100BaseTX
+						</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635379][ANS01]"
+									value="3"></span>100BaseFX</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635379][ANS01]"
+									value="4"></span>以上皆是</li>
+					</ol>
+				</td>
+			</tr>
+			<tr class="bg04 font01">
+
+				<td align="left" class="item_content">8. 何者使用短波光纖?
+					<ol type="a">
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635380][ANS01]"
+									value="1"></span>1000Base-LX</li>
+						<li><span style="background-color: green"><input type="radio"
+									name="ans[WM_ITEM1_1000100000_10067245_1648124562_635380][ANS01]" value="2"
+									checked=""></span>1000Base-SX</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635380][ANS01]"
+									value="3"></span>1000Base-CX</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635380][ANS01]"
+									value="4"></span>以上皆非</li>
+					</ol>
+				</td>
+			</tr>
+			<tr class="bg03 font01">
+
+				<td align="left" class="item_content">9. 何者使用長波光纖?
+					<ol type="a">
+						<li><span style="background-color: green"><input type="radio"
+									name="ans[WM_ITEM1_1000100000_10067245_1648124562_635381][ANS01]" value="1"
+									checked=""></span>1000Base-LX</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635381][ANS01]"
+									value="2"></span>1000Base-SX</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635381][ANS01]"
+									value="3"></span>1000Base-CX</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635381][ANS01]"
+									value="4"></span>以上皆非</li>
+					</ol>
+				</td>
+			</tr>
+			<tr class="bg04 font01">
+
+				<td align="left" class="item_content">10. RJ-45接頭前端有幾個接點？
+					<ol type="a">
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635382][ANS01]"
+									value="1"></span>4個接點</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635382][ANS01]"
+									value="2"></span>6個接點</li>
+						<li><span style="background-color: green"><input type="radio"
+									name="ans[WM_ITEM1_1000100000_10067245_1648124562_635382][ANS01]" value="3" checked=""></span>8個接點
+						</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635382][ANS01]"
+									value="4"></span>12個接點</li>
+					</ol>
+				</td>
+			</tr>
+			<tr class="bg03 font01">
+
+				<td align="left" class="item_content">11. 一個乙太訊框的最大長度為多少位元組(Byte)？
+					<ol type="a">
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635383][ANS01]"
+									value="1"></span>64B</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635383][ANS01]"
+									value="2"></span>256B</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635383][ANS01]"
+									value="3"></span>1024B</li>
+						<li><span style="background-color: green"><input type="radio"
+									name="ans[WM_ITEM1_1000100000_10067245_1648124562_635383][ANS01]" value="4" checked=""></span>1518B
+						</li>
+					</ol>
+				</td>
+			</tr>
+			<tr class="bg04 font01">
+
+				<td align="left" class="item_content">12. 一個乙太訊框中的最大酬載(payload)長度為何？
+					<ol type="a">
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635384][ANS01]"
+									value="1"></span>1064B</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635384][ANS01]"
+									value="2"></span>1360B</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635384][ANS01]"
+									value="3"></span>1412B</li>
+						<li><span style="background-color: green"><input type="radio"
+									name="ans[WM_ITEM1_1000100000_10067245_1648124562_635384][ANS01]" value="4" checked=""></span>1500B
+						</li>
+					</ol>
+				</td>
+			</tr>
+			<tr class="bg03 font01">
+
+				<td align="left" class="item_content">13. Ethertype上層使用的協定若為IP，其對應值為
+					<ol type="a">
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635385][ANS01]"
+									value="1"></span>0x0600</li>
+						<li><span style="background-color: green"><input type="radio"
+									name="ans[WM_ITEM1_1000100000_10067245_1648124562_635385][ANS01]" value="2" checked=""></span>0x0800
+						</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635385][ANS01]"
+									value="3"></span>0x0806</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635385][ANS01]"
+									value="4"></span>0x8864</li>
+					</ol>
+				</td>
+			</tr>
+			<tr class="bg04 font01">
+
+				<td align="left" class="item_content">14. 廣播用的MAC位址其對應值為
+					<ol type="a">
+						<li><span style="background-color: green"><input type="radio"
+									name="ans[WM_ITEM1_1000100000_10067245_1648124562_635386][ANS01]" value="1"
+									checked=""></span>全部為1(0xFFFFFFFFFFFF)</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635386][ANS01]"
+									value="2"></span>全部為0(0x000000000000</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635386][ANS01]"
+									value="3"></span>任何值皆可</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635386][ANS01]"
+									value="4"></span>0x000000FFFFFF</li>
+					</ol>
+				</td>
+			</tr>
+			<tr class="bg03 font01">
+				<td align="left" class="item_content">15. EthernetII連續7個交錯的訊號，作為發送端與接收端之間的同步，其值為
+					<ol type="a">
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635387][ANS01]"
+									value="1"></span>00000000</li>
+						<li><span style="background-color: green"><input type="radio"
+									name="ans[WM_ITEM1_1000100000_10067245_1648124562_635387][ANS01]" value="2" checked=""></span>01010101
+						</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635387][ANS01]"
+									value="3"></span>01010100</li>
+						<li><span><input type="radio" name="ans[WM_ITEM1_1000100000_10067245_1648124562_635387][ANS01]"
+									value="4"></span>00001111</li>
+					</ol>
+				</td>
+			</tr>
+		</tbody>
 	</table>
 </body>
 </html>
